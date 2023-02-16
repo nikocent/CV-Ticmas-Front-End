@@ -1,0 +1,35 @@
+header{
+    height: 100vh;
+    background-color: #38423B;
+    word-break: break-word;
+}
+
+#header-container{
+    height: 100%;
+}
+
+#header-pic{
+    height: 300px;
+    width: 300px;
+    min-height: 150px;
+    min-width: 150px;
+}
+
+#profile-pic{
+    height: 100%;
+    width: 100%;
+}
+
+#header-text{
+    max-height: 70%;
+    max-width: 50%;
+    color: rgba(211, 208, 203, 0.9);
+}
+
+#header-text > hr {
+    width: 80px;
+}
+
+
+
+
