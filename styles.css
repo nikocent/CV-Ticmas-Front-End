@@ -30,6 +30,30 @@ header{
     width: 80px;
 }
 
+#section-projects{
+    min-height: 200vh;
+}
 
 
-
+@media only screen and (max-width: 768px) {
+    header{
+        min-height: 700px;
+        min-width: 300px;
+    }
+    #header-container{
+        flex-direction: column;
+    }
+    #header-text > hr{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    #header-text{
+        text-align: center;
+        max-width: 90%;
+        max-height: 90%;
+    }
+    #header-pic{
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
