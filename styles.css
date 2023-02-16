@@ -1,6 +1,12 @@
+#nav-list li a{
+    font-size: 1.1rem;
+}
+/*fin navbar*/
+
+
 header{
     height: 100vh;
-    background-color: #38423B;
+    background-color: #416165;
     word-break: break-word;
 }
 
@@ -30,10 +36,26 @@ header{
     width: 80px;
 }
 
-#section-projects{
+/*FIN HEADER */
+
+#section-skills{
+    color: rgba(211, 208, 203, 0.9);
     min-height: 200vh;
+    background: rgb(65,97,101);
+    background: linear-gradient(180deg, rgba(65,97,101,1) 0%, rgba(24,61,99,1) 43%, rgba(11,44,84,1) 93%);
 }
 
+
+
+
+@media only screen and (min-width: 768px){
+    .scrolled-down{
+        transform:translateY(-100%); transition: all 0.4s ease-in-out;
+      }
+    .scrolled-up{
+        transform:translateY(0); transition: all 0.4s ease-in-out;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     header{
@@ -55,5 +77,13 @@ header{
     #header-pic{
         max-width: 200px;
         max-height: 200px;
+    }
+
+    #section-skills-showcase{
+        flex-wrap: wrap;
+        min-height: 500px;
+    }
+    #section-skills-showcase > svg{
+        margin: 50px;
     }
 }

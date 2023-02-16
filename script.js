@@ -3,6 +3,26 @@ const API_CONTAINER = document.getElementById("person");
 const API_PIC_CONTAINER = document.querySelector("#profile-pic");
 const API_LOCATION = document.getElementById("person-location");
 
+document.addEventListener("DOMContentLoaded", function(){
+    el_autohide = document.querySelector('.autohide');
+
+    if(el_autohide){
+      window.addEventListener('scroll', function() {
+            let scroll_top = window.scrollY;
+           if(scroll_top > 500) {
+                el_autohide.classList.remove('scrolled-down');
+                el_autohide.classList.add('scrolled-up');
+            }
+            else {
+                el_autohide.classList.remove('scrolled-up');
+                el_autohide.classList.add('scrolled-down');
+            }
+      }); 
+      // window.addEventListener
+    }
+    // if
+  }); 
+
 async function getPerson(){
     await fetch(API_URL)
     .then(data => {
