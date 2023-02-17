@@ -4,8 +4,8 @@
 /*fin navbar*/
 
 
-header{
-    height: 100vh;
+#header{
+    min-height: 100vh;
     background-color: #416165;
     word-break: break-word;
 }
@@ -39,9 +39,9 @@ header{
 /*FIN HEADER */
 
 #section-skills{
-    min-width: 300px;
     color: rgba(211, 208, 203, 0.9);
-    min-height: 100vh;
+    min-height: 80vh;
+    min-width: 300px;
     background: rgb(65,97,101);
     background: linear-gradient(180deg, rgba(65,97,101,1) 0%, rgba(24,61,99,1) 43%, rgba(11,44,84,1) 93%);
 }
@@ -100,9 +100,12 @@ header{
         max-height: 200px;
     }
 
+    #section-skills{
+        
+    }
+
     #section-skills-showcase{
         flex-wrap: wrap;
-        min-height: 500px;
         margin-top: 0;
     }
     #section-skills-showcase > svg{
