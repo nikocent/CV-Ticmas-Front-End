@@ -1,3 +1,7 @@
+*{
+    color:rgba(211, 208, 203, 0.9);
+}
+
 #nav-list li a{
     font-size: 1.1rem;
 }
@@ -49,6 +53,24 @@
     margin-top: 50px;
 }
 
+/*FIN SECTION-SKILLS*/
+
+#section-experience{
+    min-height: 100vh;
+    background-color: rgba(11,44,84,1);
+}
+
+.card{
+    opacity: 90%;
+}
+
+/* FIN SECTION-EXPERIENCE*/
+
+#section-info{
+    background-color: rgba(11,44,84,1);
+    min-height: 100vh;
+}
+
 @keyframes anim-appear{
     0%{
         display: none;
@@ -98,10 +120,6 @@
     #header-pic{
         max-width: 200px;
         max-height: 200px;
-    }
-
-    #section-skills{
-        
     }
 
     #section-skills-showcase{

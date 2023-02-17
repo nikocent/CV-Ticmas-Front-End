@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>CV Ticmas</title>
 </head>
+
 <nav class="autohide scrolled-down fixed-top navbar navbar-expand-md navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">&lt&#47&gt</a>
@@ -19,8 +20,8 @@
      <div class="collapse navbar-collapse" id="main_nav">
        <ul id="nav-list" class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#section-skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Work experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Info</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-experience">Work experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-info">Info</a></li>
        </ul>
      </div> <!-- navbar-collapse.// -->
     </div> <!-- container-fluid.// -->
@@ -55,8 +56,62 @@
         </div>
     </section>
 
-    <section id="section-experience">
+    <section id="section-experience" class="container-fluid py-5">
+        <div class="section-experience-appear container-xl text-center">
+            <h3 class="display-4">Work experience</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis modi, minus quis nostrum in obcaecati. Sint error tempore obcaecati minus, minima repudiandae natus dignissimos iste, necessitatibus, a nesciunt doloremque.</p>
+            <div class="row text-center py-5 gy-3">
+                <div class="col-md-4">
+                    <div class="card h-100 border-light bg-transparent">
+                        <img src="/assets/random1.jpg" class="card-img-top" alt="Coworker 1">
+                        <div class="card-body text-light">
+                          <h5 class="card-title fw-bold">Leo. T</h5>
+                          <span class="card-text fst-italic">Telecommunications Engineer
+                            Product & Business Analyst.</span><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel culpa eligendi minima blanditiis in veniam vitae, aperiam exercitationem, voluptates cumque quas itaque? Quam aspernatur iure nesciunt labore autem ratione impedit.</p>
+                          <a href="#" class="btn btn-light">Look it up on LinkedIn</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-light bg-transparent">
+                        <img src="/assets/random2.jpg" class="card-img-top" alt="Juan Doe.">
+                        <div class="card-body text-light">
+                          <h5 class="card-title fw-bold">Pablo</h5>
+                          <span class="card-text fst-italic">AWS Certified Architect. Project Manager.</span><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, sint voluptates. Illum molestiae blanditiis omnis ipsum, adipisci nostrum aut officia nesciunt praesentium explicabo? Nihil esse cum, nulla alias amet odit?</p>
+                          <a href="#" class="btn btn-light">Look it up on LinkedIn</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-light bg-transparent">
+                        <img src="/assets/random3.jpg" class="card-img-top" alt="Coworker 3">
+                        <div class="card-body text-light">
+                          <h5 class="card-title fw-bold">Juan Doe</h5>
+                          <span class="card-text fst-italic">DevOps Cloud Engineer.</span><br><br>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam architecto ea excepturi accusantium quasi. Aliquam optio libero hic mollitia non nesciunt illum ipsam quos. Ducimus reprehenderit placeat provident corporis?</p>
+                          <a href="#" class="btn btn-light">Look it up on LinkedIn</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="section-info" class="py-5 container-fluid">
+        <div class="section-info-appear container-md text-center">
+            <p class="display-3 p-5">Let's work together!</p>
+
+            <label for="email"class="input-group mb-3">
+                <input name="email" type="email" class="form-control" center maxlength="64" placeholder="username@example.com" aria-label="Username">
+                <button class="btn btn-light" type="submit">Submit</button>
+            </label>
+            
+            <p>or</p>
+            
+            <button class="btn btn-light">Get my resume</button>
+        </div>
     </section>
 </body>
 
