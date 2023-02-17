@@ -39,11 +39,32 @@ header{
 /*FIN HEADER */
 
 #section-skills{
+    min-width: 300px;
     color: rgba(211, 208, 203, 0.9);
-    min-height: 200vh;
+    min-height: 100vh;
     background: rgb(65,97,101);
     background: linear-gradient(180deg, rgba(65,97,101,1) 0%, rgba(24,61,99,1) 43%, rgba(11,44,84,1) 93%);
 }
+#section-skills-showcase{
+    margin-top: 50px;
+}
+
+@keyframes anim-appear{
+    0%{
+        display: none;
+        opacity: 0;
+    }
+    100%{
+        display: block;
+        opacity: 1;
+    }
+  }
+  
+  .appear{
+      animation-name: anim-appear;
+      animation-duration: 2500ms;
+      animation-fill-mode: forwards;
+  }
 
 
 
@@ -82,6 +103,7 @@ header{
     #section-skills-showcase{
         flex-wrap: wrap;
         min-height: 500px;
+        margin-top: 0;
     }
     #section-skills-showcase > svg{
         margin: 50px;

@@ -5,10 +5,16 @@ const API_LOCATION = document.getElementById("person-location");
 
 document.addEventListener("DOMContentLoaded", function(){
     el_autohide = document.querySelector('.autohide');
+    el_appear1 = document.querySelector('.section-skills-appear');
 
     if(el_autohide){
       window.addEventListener('scroll', function() {
             let scroll_top = window.scrollY;
+            if(scroll_top > 70){
+                el_appear1.classList.add('appear');
+            } else {
+                el_appear1.classList.remove('appear');
+            }
            if(scroll_top > 500) {
                 el_autohide.classList.remove('scrolled-down');
                 el_autohide.classList.add('scrolled-up');
