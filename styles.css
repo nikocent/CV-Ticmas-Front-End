@@ -84,7 +84,7 @@
   
   .appear{
       animation-name: anim-appear;
-      animation-duration: 2500ms;
+      animation-duration: 2000ms;
       animation-fill-mode: forwards;
   }
 
