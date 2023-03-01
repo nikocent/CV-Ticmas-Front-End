@@ -68,6 +68,6 @@ async function getPerson(){
 
 
 getPerson();
-document.getElementById("mail").onclick = () => window.open("mailto:"+API_EMAIL.textContent+"?subject=Job offer&body=Hey, we would like to work for us!");
+document.getElementById("mail").onclick = () => window.open("mailto:"+API_EMAIL.textContent+"?subject=Job offer&body=Hey, we would like you to work for us!");
 
 
