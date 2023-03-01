@@ -5,6 +5,7 @@ const API_LOCATION = document.getElementById("person-location");
 const API_PHONE = document.getElementById("person-phonenumber");
 const API_EMAIL = document.getElementById("person-email");
 
+
 document.addEventListener("DOMContentLoaded", function(){
     el_autohide = document.querySelector('.autohide');
     el_appear1 = document.querySelector('.section-skills-appear');
@@ -64,6 +65,9 @@ async function getPerson(){
     });
 }
 
+
+
 getPerson();
+document.getElementById("mail").onclick = () => window.open("mailto:"+API_EMAIL.textContent+"?subject=Job offer&body=Hey, we would like to work for us!");
 
 
